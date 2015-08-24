@@ -4,7 +4,7 @@ describe('photographs', function () {
     assert(Array.isArray(photographs));
   });
 
-  it.skip('should only contain photographs', function () {
+  it('should only contain photographs', function () {
     photographs.forEach(function (photograph) {
       assert.equal(photograph.type, 'image');
     });
@@ -18,7 +18,7 @@ describe('videos', function () {
     assert(Array.isArray(videos));
   });
 
-  it.skip('should only contain videos', function () {
+  it('should only contain videos', function () {
     videos.forEach(function (video) {
       assert.equal(video.type, 'video');
     });
@@ -32,7 +32,7 @@ describe('popularPosts', function () {
     assert(Array.isArray(popularPhotographs));
   });
 
-  it.skip('does not contain any posts with zero likes', function () {
+  it('does not contain any posts with zero likes', function () {
     popularPhotographs.forEach(function (photograph) {
       assert.notEqual(photograph.likes.count, 0);
     });
