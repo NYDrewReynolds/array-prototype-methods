@@ -13,5 +13,6 @@ var photographElements = simplifiedPhotographs.map(function(photo){
   var p = document.createElement("img");
   p.alt = photo.caption;
   p.src = photo.url;
+  p.className = "instagram-image";
   return p;
 });
