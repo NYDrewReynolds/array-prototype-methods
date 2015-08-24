@@ -13,7 +13,7 @@ var videos = instagramAPI.data.filter(function(post){
 // TODO: Filter out all of the photographs that don't have any likes and store the remaining photographs into a variable called `popularPhotographs`.
 
 var popularPhotographs = photographs.filter(function(photo){
-  return photo.likes.count !== 0;
+  return photo.likes.count > 0;
 });
 
 // TODO: Map each photograph into a DOM node and append it to the #photographs DIV element.
